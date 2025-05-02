@@ -48,6 +48,7 @@ public class FmSecundario extends javax.swing.JFrame {
         setTitle("IngresoNotas");
         setResizable(false);
 
+        lblIngreso.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblIngreso.setText("INGRESO DE NOTAS");
 
         lblNombre.setText("Nombre");
@@ -104,10 +105,6 @@ public class FmSecundario extends javax.swing.JFrame {
                         .addGap(0, 100, Short.MAX_VALUE)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGap(269, 269, 269)
-                        .addComponent(lblIngreso)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGap(97, 97, 97)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -129,15 +126,18 @@ public class FmSecundario extends javax.swing.JFrame {
                                     .addComponent(txtT1)
                                     .addComponent(txtT2)
                                     .addComponent(txtT3)
-                                    .addComponent(txtEX))))))
+                                    .addComponent(txtEX)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblIngreso)
+                                .addGap(0, 0, Short.MAX_VALUE)))))
                 .addGap(102, 102, 102))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
+                .addGap(29, 29, 29)
                 .addComponent(lblIngreso)
-                .addGap(43, 43, 43)
+                .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNombre)
                     .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -157,17 +157,17 @@ public class FmSecundario extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblEX)
                     .addComponent(txtEX, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(52, 52, 52)
+                .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnLimpiar)
                     .addComponent(btnAgregar)
                     .addComponent(btnSalir))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(44, 44, 44))
+                .addGap(33, 33, 33)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
-        setSize(new java.awt.Dimension(670, 863));
+        setSize(new java.awt.Dimension(670, 662));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
